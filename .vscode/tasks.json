@@ -1,0 +1,29 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: cl.exe build active file",
+			"command": "cl.exe",
+		"args": [
+			"/Zi", "/EHsc", "/nologo",
+			"/I.", "beagle.lib",                            // Specify include dir and link beagle.lib 
+			"/Fo${workspaceFolder}\\build\\",               // object-files
+			"/Fd${workspaceFolder}\\build\\capture.pdb",    // debug symbols
+			"/Fe${workspaceFolder}\\build\\capture.exe",    // output binary
+			"${file}"
+		],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$msCompile"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: cl.exe"
+		}
+	]
+}

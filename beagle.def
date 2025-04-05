@@ -1,0 +1,12 @@
+LIBRARY beagle.dll
+EXPORTS
+  bg_open
+  bg_close
+  bg_samplerate
+  bg_spi_read
+  bg_spi_configure
+  bg_timeout
+  bg_latency
+  bg_target_power
+  bg_enable
+  bg_disable
