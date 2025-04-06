@@ -1,9 +1,21 @@
+#define bg_open c_bg_open
+#define bg_close c_bg_close
+#define bg_enable c_bg_enable
+#define bg_disable c_bg_disable
+#define bg_spi_read c_bg_spi_read
+#define bg_spi_configure c_bg_spi_configure
+#define bg_samplerate c_bg_samplerate
+#define bg_timeout c_bg_timeout
+#define bg_latency c_bg_latency
+#define bg_target_power c_bg_target_power
+#define bg_status_string c_bg_status_string
+
 #include <beagle.h>
 #include <iostream>
 #include <fstream>
 #include <vector>
 #include <thread>
-#include <chrono> 
+#include <chrono>
 #include <cstdint>
 #include <csignal>
 #include <atomic>
